@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Guessing Game</title>
+    <style>
+        #loading{
+             display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5" id="game">
+                    <h1 class="heading pb-3">Guessing Game</h1>
+                    <p class="alert alert-info">Guess a Number Between <span class="min-num badge badge-info">1</span> and <span class="max-num badge badge-info">10</span></p>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="guess-input" placeholder="Enter your guess...">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark" id="guess-btn" type="button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LOADER HERE -->
+                    <div id="loading"><img src="loading.gif" alt="loading gif"></div>
+                    <!-- MESSAGE -->
+                    <div class="message mt-2 mb-2"></div>
+
+                    <div class="progress mt-2" style="height:0px;width:100%">
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
